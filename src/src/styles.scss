@@ -38,8 +38,56 @@ a.icon > strong {margin-left:.25rem}
     @return map-get($theme-colors, $key);
 }
 
-// Flickity - begin
-.carousel-cell {width:100%}
-// Flickity - end
+/* Carousel container */
+.carousel-cell {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
 
- 
+/* Default media sizing (landscape / square) */
+.carousel-cell img,
+.carousel-cell video {
+  display: block;
+  margin: auto;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 70vh; /* default height */
+}
+
+/* Portrait media (JS adds .portrait) */
+.carousel-cell img.portrait,
+.carousel-cell video.portrait {
+  max-height: 50vh; /* smaller for verticals */
+}
+
+/* Video polish */
+.carousel-cell video {
+  vertical-align: middle;
+  outline: none;
+}
+
+
+.modal .modal-card,
+.modal .modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .carousel-cell {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal video,
+.modal iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
