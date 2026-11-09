@@ -1,155 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="utf-8">
   <title>AleGonzcamilla</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="src/dist/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="src/dist/css/main.bundle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-
 <body>
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container">
-        <div class="level">
-          <div class="level-item has-text-centered">
-            <figure class="image is-128x128">
-              <img class="is-rounded" src="src/dist/img/Photo.png">
-            </figure>
-          </div>
-        </div>
-        <div class="columns has-text-centered">
-          <div class="column">
-            <h1 class="title is-1">
-              Alejandro González-Escamilla
-            </h1>
-            <h2 class="subtitle">
-              Mechatronics Engineer Student, Robotics Mechanical Designer
-            </h2>
-            <p>
-              <a href="https://drive.google.com/file/d/1mhQNyCW_SjvcACP9u6vE8_UMUIJVg8Hl/view?usp=sharing" class="icon has-text-light">
-                <i class="fas fa-file-word"></i> <strong>Resume</strong>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- About Me -->
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <div class="profile-header">
+        <figure class="image is-128x128 profile-header__photo">
+          <img class="is-rounded" src="src/dist/img/Photo.png" alt="Alejandro">
+        </figure>
+
+    <div class="profile-header__info">
+      <h1 class="title is-1">Alejandro González Escamilla</h1>
+      <h2 class="subtitle">Mechatronics Engineer Student, Robotics Mechanical Designer</h2>
+      <p>
+        <a href="https://drive.google.com/file/d/1mhQNyCW_SjvcACP9u6vE8_UMUIJVg8Hl/view?usp=sharing" class="icon has-text-light">
+          <i class="fas fa-file-word"></i>
+          <strong>Resume</strong>
+        </a>
+      </p>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+
   <section class="section">
     <div class="container">
       <h1 class="title">About Me</h1>
       <hr />
-      <p>I am a mechatronics engineering student at Tecnológico de Monterrey. I am passionate about robotics and technology, but I also enjoy manual work, such as carpentry. I am the project director for my campus's robotics team and lead the development of a service robot for the RoboCup @Home competition. What I like most about being part of robotics teams since high school is the community that forms and everything you can learn and teach from others.
+      <p>I'm a mechatronics engineering student at Tec de Monterrey and a visiting researcher at MIT and CMU. I'm passionate about robotics and hardware, leading the development of a service robot for the RoboCup @Home competition in my campus team, RoBorregos. What I like most about being part of robotics teams and research groups is the community that forms, alongside everything you can learn from and share with others.</p>
     </div>
   </section>
-  
-  <!-- Projects -->
-<section class="section">
-  <div class="container">
-    <h1 class="title">Projects</h1>
-    <hr />
 
-    <!-- One ancestor for ALL tiles -->
-    <div class="tile is-ancestor is-flex is-flex-wrap-wrap">
-
-      <!-- Row 1 -->
-      <div class="tile is-parent is-4">
-        <article class="tile is-child notification">
-          <p class="title">Gripper and Robot Structure</p>
-          <figure class="image is-4by3">
-            <img class="modal-trigger" data-target="project-1-modal" src="src/dist/img/Gripper.gif">
-          </figure>
-        </article>
+  <section class="section" id="projects">
+    <div class="container">
+      <h1 class="title">Projects</h1>
+      <hr />
+      <div class="tabs project-tabs">
+        <ul>
+          
+          <li class="is-active" data-filter="all"><a href="#">All</a></li>
+          <li data-filter="research"><a href="#">Research</a></li>
+          <li data-filter="work"><a href="#">Work</a></li>
+          <li data-filter="competitions"><a href="#">Competitions</a></li>
+          <li data-filter="school"><a href="#">School Projects</a></li>
+        </ul>
       </div>
-
-      <div class="tile is-parent is-4">
-        <article class="tile is-child notification">
-          <p class="title">Rescue Maze Robot</p>
-          <figure class="image is-4by3">
-            <img class="modal-trigger" data-target="project-2-modal" src="src/dist/img/Maze.jpg">
-          </figure>
-        </article>
-      </div>
-
-      <div class="tile is-parent is-4">
-        <article class="tile is-child notification">
-          <p class="title">Performing Robots</p>
-          <figure class="image" style="display:flex; justify-content:center;">
-            <img class="modal-trigger" data-target="project-3-modal"
-                 src="src/dist/img/performingRobots.gif"
-                 alt="Performing Robots"
-                 style="max-width:120px; width:100%; height:auto; object-fit:contain;">
-          </figure>
-        </article>
-      </div>
-
-      <!-- Row 2 -->
-      <div class="tile is-parent is-4">
-        <article class="tile is-child notification">
-          <p class="title">Analog Cabin Heater Control for John Deere</p>
-          <figure class="image is-4by3">
-            <img class="modal-trigger" data-target="project-4-modal" src="src/dist/img/TractorGIF.gif">
-          </figure>
-        </article>
-      </div>
-
-      <div class="tile is-parent is-4">
-        <article class="tile is-child notification">
-          <p class="title">Conveyor Design for Parvada</p>
-          <figure class="image is-4by3">
-            <img class="modal-trigger" data-target="project-5-modal" src="src/dist/img/Conveyor.gif">
-          </figure>
-        </article>
-      </div>
-
-      <div class="tile is-parent is-4">
-        <article class="tile is-child notification">
-          <p class="title">Electric Motor</p>
-          <figure class="image is-4by3">
-            <img class="modal-trigger" data-target="project-6-modal" src="src/dist/img/MotorMotionGif.gif">
-          </figure>
-        </article>
-      </div>
-
-      <!-- Row 3 -->
-      <div class="tile is-parent is-4">
-        <article class="tile is-child notification">
-          <p class="title">Goal-keeper Game</p>
-          <figure class="image is-4by3">
-            <img class="modal-trigger" data-target="project-7-modal" src="src/dist/img/goalkepperGame.jpg">
-          </figure>
-        </article>
-      </div>
-
-      <div class="tile is-parent is-4">
-        <article class="tile is-child notification">
-          <p class="title">Eco-friendly Toy Cart</p>
-          <figure class="image is-4by3">
-            <img class="modal-trigger" data-target="project-8-modal" src="src/dist/img/ecoFriendlyCart.jpg">
-          </figure>
-        </article>
-      </div>
-
-      <div class="tile is-parent is-4">
-        <article class="tile is-child notification">
-          <p class="title">AC-sensor case</p>
-          <figure class="image is-4by3">
-            <img class="modal-trigger" data-target="project-9-modal" src="src/dist/img/AC_sensor.png">
-          </figure>
-        </article>
-      </div>
-
+      <div id="project-grid" class="tile is-ancestor is-flex is-flex-wrap-wrap"></div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-  <!-- Experience -->
   <section class="section">
     <div class="container">
       <h1 class="title">Experience</h1>
@@ -157,11 +66,25 @@
       <div class="card">
         <div class="card-content">
           <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="src/dist/img/Logos/parvada.jpg" alt="Placeholder image">
-              </figure>
+            <div class="media-left"><figure class="image is-48x48"><img src="src/dist/img/Logos/ri.png" alt="ri"></figure></div>
+            <div class="media-content">
+              <p class="title is-4">Robotics Institute Carnegie Mellon University</p>
+              <p class="subtitle is-6">Visiting Research Intern | July 2026 - October 2026</p>
             </div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Collaborated in SHRED Lab (Social Haptics, Robotics and Education Lab). </li>
+              <li>Work on desiging an endoskeleton for Dexkit, a soft hand and haptic teleoperation educational kit for teaching dexterous manipulation.</li>
+              <li>Simplified assembly and manufacturing of the educational kit.</li>
+              <li>Enhanced total workspace of the dexterous hand.</li>
+            </ul>
+            <a class="related-project" data-project="hand" tabindex="0">See project</a>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left"><figure class="image is-48x48"><img src="src/dist/img/Logos/parvada.png" alt="Parvada"></figure></div>
             <div class="media-content">
               <p class="title is-4">Parvada</p>
               <p class="subtitle is-6">Mechanical Design Engineer | October 2025 - Present</p>
@@ -171,16 +94,14 @@
             <ul>
               <li>Mechanical design of parts and assemblies for the company's smart industrial machinery.</li>
               <li>Preparation of technical drawings and documentation for production with international suppliers.</li>
+              <li>Reduce assembly time of the machine by more than 50%.</li>
             </ul>
+            <a class="related-project" data-project="conveyor" tabindex="0">See project</a>
           </div>
         </div>
         <div class="card-content">
           <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="src/dist/img/Logos/provericyt.jpg" alt="Placeholder image">
-              </figure>
-            </div>
+            <div class="media-left"><figure class="image is-48x48"><img src="src/dist/img/Logos/provericyt.jpg" alt="PROVERICYT"></figure></div>
             <div class="media-content">
               <p class="title is-4">PROVERICYT 2023</p>
               <p class="subtitle is-6">Research Intern | July 2023</p>
@@ -188,22 +109,17 @@
           </div>
           <div class="content">
             <ul>
-              <li>Participation in the “Verano de Investigacion Cientifica y Tecnologica, FIME 2023” where I worked as a research assistant intern.</li>
+              <li>Participation in the “Verano de Investigacion Cientifica y Tecnologica, FIME 2023” as a research assistant intern.</li>
               <li>Designed and presented a scientific poster on the study "Comparison of PCB Fabrication Methods: Diode Laser vs. Milling".</li>
             </ul>
           </div>
         </div>
         <div class="card-content">
           <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="src/dist/img/Logos/CIDEB.jpg" alt="Placeholder image">
-              </figure>
-            </div>
+            <div class="media-left"><figure class="image is-48x48"><img src="src/dist/img/Logos/CIDEB.jpg" alt="CIDEB"></figure></div>
             <div class="media-content">
               <p class="title is-4">Centro de Investigación y Desarrollo de Educación Bilingüe (CIDEB)</p>
-              <p class="subtitle is-6"> Professor | <time datetime="2022-11">November 2022</time> - <time
-                  datetime="2023-02">February 2023</time> </p>
+              <p class="subtitle is-6">Professor | November 2022 - February 2023</p>
             </div>
           </div>
           <div class="content">
@@ -215,579 +131,103 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
 
-  <!-- Education -->
   <section class="section">
-        <div class="container">
-          <h1 class="title">Education</h1>
-          <hr />
-      <div class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="src/dist/img/Logos/Logo_del_ITESM.svg" alt="Placeholder image">
-              </figure>
-            </div>
+    <div class="container">
+      <h1 class="title">Education</h1>
+      <hr />
+      <div class="card"><div class="card-content"><div class="media">
+        <div class="media-left"><figure class="image is-48x48"><img src="src/dist/img/Logos/Logo_del_ITESM.svg" alt="Tecnológico de Monterrey"></figure></div>
+        <div class="media-content">
+          <p class="title is-4">Tecnológico de Monterrey</p>
+          <p class="subtitle is-6">B.S. in Mechatronics Engineering | August 2023 - June 2027</p>
+        </div>
+      </div></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Certifications</h1>
+      <hr />
+      <div class="columns is-multiline">
+        <div class="column is-6">
+          <div class="card"><div class="card-content"><div class="media">
+            <div class="media-left"><figure class="image is-48x48"><img src="src/dist/img/Logos/DassaultSystemes.png" alt="Dassault Systèmes"></figure></div>
             <div class="media-content">
-            <p class="title is-4">Tecnológico de Monterrey</p>
-            <p class="subtitle is-6">B.S. in Mechatronics Engineering | <time datetime="2023-8">August 2023</time> - <time
-                datetime="2027-6">June 2027</time></p>
+              <p class="title is-4">SOLIDWORKS Sheet Metal Professional (CSWP-SM)</p>
+              <p class="subtitle is-6">C-QEZW6BR9DC - July 1 2025</p>
             </div>
-          </div>
+          </div></div></div>
+        </div>
+        <div class="column is-6">
+          <div class="card"><div class="card-content"><div class="media">
+            <div class="media-left"><figure class="image is-48x48"><img src="src/dist/img/Logos/DassaultSystemes.png" alt="Dassault Systèmes"></figure></div>
+            <div class="media-content">
+              <p class="title is-4">SOLIDWORKS CAD Design Professional (CSWP)</p>
+              <p class="subtitle is-6">C-2MUGCWTX8N - June 29 2025</p>
+            </div>
+          </div></div></div>
         </div>
       </div>
+    </div>
   </section>
 
-  <!-- Certifications -->
-  <section class="section">
-      <div class="container">
-        <h1 class="title">Certifications</h1>
-        <hr />
-        <div class="columns is-centered is-multiline">
-          <div class="column is-6-tablet is-5-desktop is-4-widescreen">
-            <div class="card">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="src/dist/img/Logos/DassaultSystemes.png" alt="DS logo">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">SOLIDWORKS Sheet Metal Professional (CSWP-SM)</p>
-                    <p class="subtitle is-6">C-QEZW6BR9DC - July 1 2025</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column is-6-tablet is-5-desktop is-4-widescreen">
-            <div class="card">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="src/dist/img/Logos/DassaultSystemes.png" alt="DS logo">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">SOLIDWORKS CAD Design Professional (CSWP)</p>
-                    <p class="subtitle is-6">C-2MUGCWTX8N - June 29 2025</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <!-- Contact -->
   <section class="section">
     <div class="container">
       <h1 class="title">Contact</h1>
       <hr />
       <nav class="level">
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="mailto:alejandroge3105@gmail.com" class="icon is-large">
-              <i class="fas fa-2x fa-envelope"></i>
-            </a>
-            <p class="heading"><a href="mailto:alejandroge3105@gmail.com">mail</a></p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="https://www.linkedin.com/in/alejandro-gon-esc" class="icon is-large">
-              <i class="fab fa-2x fa-linkedin-in"></i>
-            </a>
-            <p class="heading"><a href="https://www.linkedin.com/in/alejandro-gon-esc">linkedin</a></p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="https://github.com/AleGonzcamilla" class="icon is-large">
-              <i class="fab fa-2x fa-github"></i>
-            </a>
-            <p class="heading"><a href="https://github.com/AleGonzcamilla">github</a></p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="https://www.thingiverse.com/alegonzcamilla/designs" class="icon is-large">
-              <i class="fas fa-2x fa-cube"></i>
-            </a>
-            <p class="heading"><a href="https://www.thingiverse.com/alegonzcamilla/designs">Thingiverse</a></p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="https://grabcad.com/alejandro.gonzalez.escamilla-1" class="icon is-large">
-              <i class="fas fa-2x fa-cog"></i>
-            </a>
-            <p class="heading"><a href="https://grabcad.com/alejandro.gonzalez.escamilla-1">GrabCAD</a></p>
-          </div>
-        </div>
+        <div class="level-item has-text-centered"><div>
+          <a href="mailto:alejandroge3105@gmail.com" class="icon is-large"><i class="fas fa-2x fa-envelope"></i></a>
+          <p class="heading"><a class="contact-link" href="mailto:alejandroge3105@gmail.com">mail</a></p>
+        </div></div>
+        <div class="level-item has-text-centered"><div>
+          <a href="https://www.linkedin.com/in/alejandro-gon-esc" class="icon is-large"><i class="fab fa-2x fa-linkedin-in"></i></a>
+          <p class="heading"><a class="contact-link" href="https://www.linkedin.com/in/alejandro-gon-esc">linkedin</a></p>
+        </div></div>
+        <div class="level-item has-text-centered"><div>
+          <a href="https://github.com/AleGonzcamilla" class="icon is-large"><i class="fab fa-2x fa-github"></i></a>
+          <p class="heading"><a class="contact-link" href="https://github.com/AleGonzcamilla">github</a></p>
+        </div></div>
+        <div class="level-item has-text-centered"><div>
+          <a href="https://www.thingiverse.com/alegonzcamilla/designs" class="icon is-large"><i class="fas fa-2x fa-cube"></i></a>
+          <p class="heading"><a class="contact-link" href="https://www.thingiverse.com/alegonzcamilla/designs">Thingiverse</a></p>
+        </div></div>
+        <div class="level-item has-text-centered"><div>
+          <a href="https://grabcad.com/alejandro.gonzalez.escamilla-1" class="icon is-large"><i class="fas fa-2x fa-cog"></i></a>
+          <p class="heading"><a class="contact-link" href="https://grabcad.com/alejandro.gonzalez.escamilla-1">GrabCAD</a></p>
+        </div></div>
       </nav>
     </div>
   </section>
 
-  <!-- Modals -->
-  <div id="project-1-modal" class="modal">
+  <!-- One shared modal, filled from src/src/projects.js -->
+  <div id="modal" class="modal">
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Gripper and Structure for a Service Robot</p>
+        <p class="modal-card-title" id="m-title"></p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
-
-        <div id="project-1-modal-carousel" class="carousel">
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Gripper and Robot Structure/gripperOld.jpg">
-          </figure>
-          <figure class="carousel-cell">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0mFP49CI3dk?si=RvJ4MDL3datXEoyp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Gripper and Robot Structure/acrylicRobot.png">
-          </figure>
-          <figure class="carousel-cell">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/28Ytq9ULG4c?si=fPFmpIXZ55drdBZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>         
-          </figure>
-        </div>
-
-        <div class="content">
-
-          <p>
-            <ul>
-              <li>Design and <b>3D print</b> a 2-finger parallel gripper able to hold up a variety of household objects.</li>
-              <li>Used a <b>custom mold</b> to create the silicone rubber pads for the gripper fingers, succesfully increasing friction and grip.</li>
-              <li>Manufacture of a <b>metal</b> cover to protect the internal components of the robot, designed using SolidWorks <b>sheet metal features</b>.</li>
-              <li>Used <b>weldments</b> features to design a new internal structure for the robot, maximizing its height without compromising stability, two more front wheels were added to achieve this while ensuring that the robot's LiDAR sensor was not obstructed.</li>
-              <li>Redesigned the robot's cover for the new structure, now manufactured with <b>acrylic</b> sheets which improved the paint finish.</li>
-              <li>Created and tested the robot's <b>URDF</b> and xacro files to be used in <b>ROS2</b>, created a node that publishes the gripper's IR sensor state.</li>
-              <li>Competed internationally in the RoboCup 2025 in the @Home category, showcasing the capabilities of the <b>service robot</b>.</li>
-            </ul>
-          </p>
-
-          <div class="tags">
-            <span class="tag">sheetmetal</span>
-            <span class="tag">3D molds</span>
-            <span class="tag">ROS2</span>
-            <span class="tag">weldments</span>
-            <span class="tag">URDF-xacro</span>
-            <span class="tag">project management</span>
+        <div class="slider">
+          <div class="slides" id="m-slides"></div>
+          <div class="slider-nav">
+            <button class="prev" aria-label="Previous">&lsaquo;</button>
+            <div class="dots" id="m-dots"></div>
+            <button class="next" aria-label="Next">&rsaquo;</button>
           </div>
-
         </div>
-
+        <div class="content" id="m-body"></div>
       </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
     </div>
   </div>
 
-  <div id="project-2-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Rescue Maze Robot</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-
-        <div id="project-2-modal-carousel" class="carousel">
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Maze Robot/earlyDesign.jpg">
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Maze Robot/2doLugar.jpg">
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Maze Robot/finishedDesign.jpg">
-          </figure>
-          <figure class="carousel-cell">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/2oSYpGb6yf8?si=6jv0Rss-VsQSSSfF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </figure>
-        </div>
-
-        <div class="content">
-
-          <p>
-            <ul>
-              <li>Design and manufacture of a robot capable of autonomously solve mazes, cross small stairs, speed bumps and ramps.</li>
-              <li>Designed on <b>Solidworks</b> and manufactured with 3D printed parts and laser cutted MDF.</li>
-              <li>Rack and pinion mechanism for dispensing small boxes.</li>
-              <li>Designed <b>TPU wheels</b> to work as a suspension system for the robot to be able to cross obstacles.</li>
-              <li>Obtained a 2nd place in the national competition of the RoboCup Junior Rescue Maze category.</li>
-            </ul>
-          </p>
-
-          <div class="tags">
-            <span class="tag">3D modeling</span>
-            <span class="tag">rapid prototyping</span>
-            <span class="tag">3D printing</span>
-            <span class="tag">robotics</span>
-          </div>
-
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-3-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Performing Robots for RoboCup OnStage</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-3-modal-carousel" class="carousel">
-          <figure class="carousel-cell">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nb9xt6Dmxxw?si=WkvPRMNIdXMp9K6J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </figure>
-          <figure class="carousel-cell">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/mUYb6li2m9s?si=xAIXNSyZVe0lexCD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Performing Robots/scrat.png">
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Performing Robots/icebergs.png">
-          </figure>
-          <figure class="carousel-cell">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tRqyR_EXFCI?si=BsOubRhLB4THEzF3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>           
-             <ul>
-              <li>Construct and design several robots for the RoboCup OnStage competition, the robots were meant to give a performance following different themes.</li>
-              <li>Design and printing of a head capable of expressing different emotions for the "Sullivan" from Monsters Inc. robot.</li>
-              <li>Wiring and cable management for each of the robot's <b>electronics</b>.</li>
-              <li><b>Arduino</b> programming for the robot's servomotor movements.</li>
-              <li>Used <b>Fusion 360</b> for 3D modeling the Scratt from Ice Age robot, taking care of the limited space and thinking about the character's shape from the beginning.</li>
-              <li>Design of the robot's costumes considering easy disassembly, robot aesthetics and preventing overheating of internal components.</li>
-
-            </ul>
-          </p>
-          <div class="tags">
-            <span class="tag">arduino</span>
-            <span class="tag">3D printing</span>
-            <span class="tag">3D modeling</span>
-            <span class="tag">electronics</span>
-            <span class="tag">costume design</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-4-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Analog Cabin Heater Control for John Deere</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-4-modal-carousel" class="carousel">
-          <figure class="carousel-cell">
-            <img src="src/dist/img/CabinHeater/ProteusPractice_page-0001.jpg">
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/CabinHeater/protoCircuit.jpg">
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/CabinHeater/CADinterior.png">
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/CabinHeater/finishedTractor.jpg">
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/CabinHeater/blockDiagram.png">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>           
-             <ul>
-              <li>Design of an analog cabin heater control system for a John Deere tractor as part of the Troubleshooting Processes college course.</li>
-              <li>Designed the electronic circuit using <b>Proteus</b> software, including op-amp based filters, <b>comparators with hysteresis</b> and on/off control implementation.</li>
-              <li>Designed the enclosure and interior panel using <b>SolidWorks</b>, considering air flow and inside heat.</li>
-              <li>Final assembly and testing of the complete system in a tractor cabin mockup.</li>
-            </ul>
-          </p>
-          <div class="tags">
-            <span class="tag">opamp</span>
-            <span class="tag">sheet metal design</span>
-            <span class="tag">filters</span>
-            <span class="tag">electronic circuits</span>
-            <span class="tag">soldering</span>
-            <span class="tag">crimping</span>
-            <span class="tag">on/off control implementation</span>
-            <span class="tag">Proteus</span>
-
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-5-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Conveyor Design for Parvada</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-5-modal-carousel" class="carousel">
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Conveyor/Render.png">
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Conveyor/ZoomIn.png">
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Conveyor/Weldments.png">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>           
-             <ul>
-              <li>Design of a conveyor for Parvada, a company specialized in the automation of the poultry industry.</li>
-              <li>Conveyor able to carry up to 36kg.</li>
-              <li>Implement height-adjustable legs, a control panel and belt tensioners.</li>
-              <li>Dealt with weight, size and <b>manufacturing constraints</b>.</li>
-            </ul>
-          </p>
-          <div class="tags">
-            <span class="tag">CAD</span>
-            <span class="tag">SolidWorks</span>
-            <span class="tag">assembly</span>
-            <span class="tag">technical drawings</span>
-            <span class="tag">mechanical design</span>
-            <span class="tag">weldments design</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-6-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Custom Electric Motor</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-6-modal-carousel" class="carousel">
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Electric Motor/explodedMotor.gif">
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Electric Motor/semiAssembledMotor.png">
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Electric Motor/motorTerminado.jpg">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>
-            <ul>
-              <li>Design of a custom electric motor, including the stator, rotor, and housing for an Electromagnetism college course.</li>
-              <li>The design allowed for <b>easy modifications</b> as some components such as the magnets were not fully defined and were changed afterwards.</li>
-              <li>The motor achieved to lift 425 grams, being the one with the greatest torque in the class.</li>
-              <li>The motor reached up to 680 rpm at 5.38V 2.4A</li>
-            </ul>
-          </p>
-          <div class="tags">
-            <span class="tag">3D printing</span>
-            <span class="tag">3D modeling</span>
-            <span class="tag">electromagnetism</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-7-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Robotic GoalKepper</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-7-modal-carousel" class="carousel">
-          <figure class="carousel-cell">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ie60nSlcaqw?si=eCXHnCkS9BQuuWUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Goal-kepper game/CADscreenshotTransparent.png">
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Goal-kepper game/CADscreenshot.png">
-          </figure>
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Goal-kepper game/DXFtoCut.jpg">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>
-            <ul>
-              <li>Final project for the "Implementation of Mechatronic Systems" college course.</li>
-              <li>Design on <b>SolidWorks</b> of a robotic goalkeeper for a football game, where the robot had to block balls thrown by other three goalkeepers.</li>
-              <li>Used different patterns of <b>laser cutted</b> MDF to obtained curved shapes for the cover.</li>
-              <li><b>Arduino</b> programming of the stepper motor and use of interrupts for the goalkeeper's limit switches.</li>
-              <li>Soldering of the project electronics to ensure secure connections.</li>
-            </ul>
-          </p>
-          <div class="tags">
-            <span class="tag">electronics</span>
-            <span class="tag">arduino</span>
-            <span class="tag">rapid prototyping</span>
-            <span class="tag">CAD</span>
-            <span class="tag">laser cutting</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-8-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Eco-friendly Toy Cart</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-8-modal-carousel" class="carousel">
-          <figure class="carousel-cell">
-            <img src="src/dist/img/Eco-friendly toy cart/RenderFinalCart.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="src/dist/img/Eco-friendly toy cart/unfolded.jpg">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="src/dist/img/Eco-friendly toy cart/multipleCarts.jpg">
-          </figure>
-          <figure class="image is-2by4 carousel-cell">
-            <img src="src/dist/img/Eco-friendly toy cart/disasembledCart.jpg">
-          </figure>
-          <figure class="image is-2by4 carousel-cell">
-            <img src="src/dist/img/Eco-friendly toy cart/cartSketches.jpg">
-          </figure>
-
-        </div>
-
-        <div class="content">
-          <p>
-            <ul>
-              <li>Design of an eco-friendly toy cart, as part of the "Design and Analysis of Experiments in Engineering Innovation" college course.</li>
-              <li>Designed on <b>SolidWorks</b> using <b>sheet metal</b> features, the car was powered with a rubber band mechanism.</li>
-              <li>Used <b>Design of Experiments (DOE)</b> and <b>JMP</b> software to optimize the cart's maximum traveled distance while changing different variables.</li>
-              <li>Manufactured using <b>laser cutting</b> techniques on cardboard, allowing for easy assembly and disassembly without the need for adhesives.</li>
-              <li>Used the <b>design thinking</b> methodology to always have in mind the final user of the toy.</li>
-              <li>The 8 produced carts were donated to the social service "ITERAndo con Javer".</li>
-            </ul>
-          </p>
-          <div class="tags">
-            <span class="tag">sheetmetal</span>
-            <span class="tag">DOE</span>
-            <span class="tag">JMP</span>
-            <span class="tag">laser cutting</span>
-            <span class="tag">design thinking</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-9-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">AC Sensor with LabView Interface</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-9-modal-carousel" class="carousel">
-          <figure class="image is-5by3 carousel-cell">
-            <img src="src/dist/img/AC-sensor case/labview.jpg">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="src/dist/img/AC-sensor case/side2.jpg">
-          </figure>
-          <figure class="image is-5by3 carousel-cell">
-            <img src="src/dist/img/AC-sensor case/structural analysis.jpg">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>
-            <ul>
-              <li>Design of a case for an AC sensor, as part of the "Mechatronics Integration" college course.</li>
-              <li>Used <b>SolidWorks weldments</b> features to design a robust and lightweight case that could be easily manufactured.</li>
-              <li>The case needed to withstand 100kg and a <b>structural analysis</b> was made to ensure its integrity.</li>
-              <li>Developed a user interface using <b>LabView</b> to display real-time data from the AC sensor, enhancing user interaction and data interpretation.</li>
-            </ul>
-          </p>
-          <div class="tags">
-            <span class="tag">weldments</span>
-            <span class="tag">LabView</span>
-            <span class="tag">structural analysis</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
 
   <script src="src/dist/js/bundle.js"></script>
-</body>
 
+</body>
 </html>
